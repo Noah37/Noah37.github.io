@@ -98,7 +98,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">cjspecs</span><br><span class="line">- Type: git (master)</span><br><span class="line">- URL:  git@github.com:NoryCao/cjspecs.git</span><br><span class="line">- Path: /Users/caony/.cocoapods/repos/cjspecs</span><br><span class="line"></span><br><span class="line">master</span><br><span class="line">- Type: git (master)</span><br><span class="line">- URL:  https://github.com/CocoaPods/Specs.git</span><br><span class="line">- Path: /Users/caony/.cocoapods/repos/master</span><br></pre></td></tr></table></figure>
 <p>第一项为我即将创建的索引库，第二项则为github的索引库。由于github的私有库收费，我将建立公有库进行示例。</p>
 <hr>
-<h1 id="二、正文"><a href="#二、正文" class="headerlink" title="二、正文"></a>二、正文</h1><p>###1、终端中进入到准备创建示例工程的目录中，本次我们准备创建的工程名为<code>CJModule_A</code></p>
+<h1 id="二、正文"><a href="#二、正文" class="headerlink" title="二、正文"></a>二、正文</h1><font size="4" color="orange">1、终端中进入到准备创建示例工程的目录中，本次我们准备创建的工程名为<code>CJModule_A</code></font>
+
+
 <p>在终端中输入：<br><code>pod lib create CJModule_A</code></p>
 <p><strong>该操作会将github中的pod模板clone到本地，并创建<code>CJModule_A</code>的模块工程</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">Cloning `https://github.com/CocoaPods/pod-template.git` into `cjspecs`.</span><br><span class="line">Configuring cjspecs template.</span><br><span class="line">security: SecKeychainSearchCopyNext: The specified item could not be found in the keychain.</span><br><span class="line"></span><br><span class="line">------------------------------</span><br><span class="line"></span><br><span class="line">To get you started we need to ask a few questions, this should only take a minute.</span><br><span class="line"></span><br><span class="line">2019-03-05 15:44:50.814 defaults[26476:3443002]</span><br><span class="line">The domain/default pair of (org.cocoapods.pod-template, HasRunbefore) does not exist</span><br><span class="line">If this is your first time we recommend running through with the guide:</span><br><span class="line"> - https://guides.cocoapods.org/making/using-pod-lib-create.html</span><br><span class="line"> ( hold cmd and click links to open in a browser. )</span><br><span class="line"></span><br><span class="line"> Press return to continue.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">What platform do you want to use?? [ iOS / macOS ]</span><br><span class="line"> &gt; iOS</span><br><span class="line"></span><br><span class="line">What language do you want to use?? [ Swift / ObjC ]</span><br><span class="line"> &gt; ObjC</span><br><span class="line"></span><br><span class="line">Would you like to include a demo application with your library? [ Yes / No ]</span><br><span class="line"> &gt; Yes</span><br><span class="line"></span><br><span class="line">Which testing frameworks will you use? [ Specta / Kiwi / None ]</span><br><span class="line"> &gt; None</span><br><span class="line"></span><br><span class="line">Would you like to do view based testing? [ Yes / No ]</span><br><span class="line"> &gt; Yes</span><br><span class="line"></span><br><span class="line">What is your class prefix?</span><br><span class="line"> &gt; CJ</span><br><span class="line"> </span><br><span class="line"> Running pod install on your new library.</span><br><span class="line"></span><br><span class="line">Analyzing dependencies</span><br><span class="line">Fetching podspec for `cjspecs` from `../`</span><br><span class="line">Downloading dependencies</span><br><span class="line">Installing FBSnapshotTestCase (2.1.4)</span><br><span class="line">Installing cjspecs (0.1.0)</span><br><span class="line">Generating Pods project</span><br><span class="line">Integrating client project</span><br><span class="line"></span><br><span class="line">[!] Please close any current Xcode sessions and use `cjspecs.xcworkspace` for this project from now on.</span><br><span class="line">Sending stats</span><br><span class="line">Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.</span><br><span class="line"></span><br><span class="line"> Ace! you&apos;re ready to go!</span><br><span class="line"> We will start you off by opening your project in Xcode</span><br><span class="line">  open &apos;cjspecs/Example/cjspecs.xcworkspace&apos;</span><br><span class="line"></span><br><span class="line">To learn more about the template see `https://github.com/CocoaPods/pod-template.git`.</span><br><span class="line">To learn more about creating a new pod, see `http://guides.cocoapods.org/making/making-a-cocoapod`.</span><br></pre></td></tr></table></figure>
@@ -110,8 +112,10 @@
 <p>进入该模块的项目文件目录，然后输入</p>
 <p><code>pod install</code></p>
 <p>获取最新版本的代码。至此，本地工程创建完成。</p>
-<p>###三、创建远程CJModule_A工程并链接</p>
-<p>####1、我们打开github，new一个repo</p>
+<font size="5" color="red">三、创建远程CJModule_A工程并链接</font>
+
+<font size="4" color="orange">1、我们打开github，new一个repo</font>
+
 <p><img src="/2019/03/05/CocoaPods创建索引库全过程/github_init_module_a.png" alt="module_a"></p>
 <p><strong>注意：Initialize README不要勾选，.gitignore与license都选择默认的none，否则待会上传代码会有冲突。</strong></p>
 <p>创建完成后获取该github项目的https地址:</p>
@@ -126,7 +130,8 @@
 <p>⑤. s.summary需要填写，否则后面会报警告</p>
 <p>More：<a href="http://guides.cocoapods.org/syntax/podspec.html" target="_blank" rel="noopener">http://guides.cocoapods.org/syntax/podspec.html</a></p>
 <p>其他的选项可根据需要填写</p>
-<p>####3、对本地的podspec文件进行验证</p>
+<font size="4" color="orange">3、对本地的podspec文件进行验证</font>
+
 <p>podspec文件的第一行不知道大家注意了没</p>
 <h1 id="Be-sure-to-run-pod-lib-lint-TestLib-podspec-39-to-ensure-this-is-a-valid-spec-before-submitting"><a href="#Be-sure-to-run-pod-lib-lint-TestLib-podspec-39-to-ensure-this-is-a-valid-spec-before-submitting" class="headerlink" title="Be sure to run pod lib lint TestLib.podspec&#39; to ensure this is a valid spec before submitting."></a>Be sure to run <code>pod lib lint TestLib.podspec&#39; to ensure this is a valid spec before submitting.</code></h1><p>这就是我们要进行的验证：</p>
 <p>①. 回到终端，回到TestLib工程的根目录下,输入</p>
@@ -144,10 +149,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:NoryCao/TestLib.git</span><br><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 <p><strong>第一行：将本地的工程与远程工程关联起来</strong></p>
 <p><strong>第二行：将本地代码推送到远程分支</strong></p>
-<p>####5、验证远程podspec</p>
+<font size="4" color="orange">5、验证远程podspec</font>
+
 <p>验证远程podspec前需要先打tag，并且该tag需要与podspec中的s.version一致</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git tag 0.1.0</span><br><span class="line">git push --tags</span><br><span class="line">pod spec lint --private</span><br></pre></td></tr></table></figure>
-<p>####6、添加远程索引库</p>
+<font size="4" color="orange">6、添加远程索引库</font>
+
 <p>与前面创建远程仓库方法一致，除名称外，其他默认即可。</p>
 <p><img src="/2019/03/05/CocoaPods创建索引库全过程/github_module_a_specs.png" alt="specs"></p>
 <p>然后添加本地索引库并与远程库进行关联，成功后推送到远程。</p>
@@ -159,14 +166,18 @@
 <p><code>pod search TestLib</code></p>
 <p>可搜索到以下内容，版本0.1.3是我制作第二次产生的，后面会讲到</p>
 <p><img src="/2019/03/05/CocoaPods创建索引库全过程/github_module_a_pod.png" alt></p>
-<p>####7、创建主工程MainProject并引入TestLib</p>
+<font size="4" color="orange">7、创建主工程MainProject并引入TestLib</font>
+
+
 <p>终端中进入到MainProject根目录下，输入</p>
 <p><code>pod init</code></p>
 <p>在生成的Podfile文件添加source</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">source &apos;git@github.com:NoryCao/cjspecs.git&apos;</span><br><span class="line">source &apos;https://github.com/CocoaPods/Specs.git&apos;</span><br><span class="line"># Uncomment the next line to define a global platform for your project</span><br><span class="line"># platform :ios, &apos;9.0&apos;</span><br><span class="line"></span><br><span class="line">target &apos;MainProject&apos; do</span><br><span class="line">  # Uncomment the next line if you&apos;re using Swift or would like to use dynamic frameworks</span><br><span class="line">  use_frameworks!</span><br><span class="line">    pod &apos;TestLib&apos;</span><br><span class="line"></span><br><span class="line">  # Pods for MainProject</span><br><span class="line"></span><br><span class="line">  target &apos;MainProjectTests&apos; do</span><br><span class="line">    inherit! :search_paths</span><br><span class="line">    # Pods for testing</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  target &apos;MainProjectUITests&apos; do</span><br><span class="line">    inherit! :search_paths</span><br><span class="line">    # Pods for testing</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <p>然后执行<br><code>pod install</code></p>
 <p>完成后，TestLib框架已被引入到MainProject中</p>
-<p>####8、为TestLib添加资源文件</p>
+<font size="4" color="orange">8、为TestLib添加资源文件</font>
+
+
 <p>1、我们来为TestLib添加资源文件，本次示例添加图片</p>
 <p><code>usercenter_nav_setting.png</code></p>
 <p>前面打开注释的podspec中的代码段：</p>
@@ -197,7 +208,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/05/CocoaPods创建索引库全过程/" data-id="cjswudzqb0001utuawbjfcq7r" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/05/CocoaPods创建索引库全过程/" data-id="cjswuqj4q00016fua6a67m5nq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -242,7 +253,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/05/hello-world/" data-id="cjswudzp50000utuavc2fiezh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/05/hello-world/" data-id="cjswuqj4000006fua1uz1k5s5" class="article-share-link">Share</a>
       
       
     </footer>
